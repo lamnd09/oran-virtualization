@@ -1,0 +1,7 @@
+{
+    "timestamp": "2025-02-12T15:00:00Z",
+    "total_requests": 1000,
+    "sensitive_requests": 300,
+    "sensitive_ratio": 0.3
+  }
+  
