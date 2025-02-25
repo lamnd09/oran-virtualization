@@ -25,7 +25,7 @@ oran-project/
 ### Example API Call Using `curl`:
 
 ```bash
-curl -X POST http://<centralized-logging-agent-ip>/api/sensitive-data \
+curl -X POST http://<shao-drl-agent-ip>/api/sensitive-data \
      -H "Content-Type: application/json" \
      -d '{
            "timestamp": "2025-02-26T15:00:00Z",
