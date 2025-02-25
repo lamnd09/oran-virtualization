@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: producer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: producer
+  template:
+    metadata:
+      labels:
+        app: producer
+    spec:
+      containers:
+        - name: producer
+          image: your-docker-registry/producer:latest
+          env:
+            - name: MONGO_URI
+              value: "mongodb://mongo:27017"
+            - name: CPU_THRESHOLD
+              value: "100"
+            - name: MEM_THRESHOLD
+              value: "400"
+            - name: REDUCE_TO
+              value: "5"
