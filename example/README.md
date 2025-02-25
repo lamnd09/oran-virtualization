@@ -4,7 +4,7 @@ The Centralized Logging Agent exposes an API endpoint to accept sensitive ratio 
 
 ```plaintext
 oran-project/
-├── server.py              # Your Flask API server
+├── server.py              # The Flask API server
 ├── drl_agent.py           # Module containing the DRL core logic
 ├── requirements.txt
 └── README.md
